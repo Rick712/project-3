@@ -1,5 +1,7 @@
 (function(){
 
+    const socket = io()
+
     const drops = document.querySelector('.drops')
     if(drops) {
         window.addEventListener('hashchange', function() {
@@ -8,6 +10,15 @@
             } else {
                 drops.classList.add('gone')
             }
+        })
+    }
+
+    const bttnUsername = document.querySelector('.submitUsername')
+    if(bttnUsername) {
+        bttnUsername.addEventListener('click', function() {
+            const form = document.querySelector('.usernameInput')
+            const username = form.value
+            socket.emit('username', username)
         })
     }
 

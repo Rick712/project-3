@@ -11,8 +11,6 @@
             const firstPos = window.getComputedStyle(fish).getPropertyValue('left').split('p')[0],
                 nextPos = xPos * xRand
 
-                console.log(firstPos, nextPos)
-
             if (firstPos > nextPos) {
                 fish.style.transform = "rotateY(180deg)"
             }

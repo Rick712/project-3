@@ -8,7 +8,15 @@ app.use(express.static('public'))
 const port = 3000
 
 app.get('/', function (req, res) {
-    res.render('index.ejs')
+    res.render('index')
+})
+
+app.get('/tank', function(req, res) {
+    res.render('pages/tank')
+})
+
+app.get('/plant', function (req, res) {
+    res.render('pages/plant')
 })
 
 app.listen(port, function () {

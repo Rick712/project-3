@@ -1,9 +1,14 @@
 (function(){
-    // const bacteriaMore = document.querySelector('.bac-more')
-    // if(bacteriaMore) {
-    //     bacteriaMore.addEventListener('click', function() {
-    //         console.log('hallo')
-    //         window.scrollTo(0, 600)
-    //     })
-    // }
+
+    const drops = document.querySelector('.drops')
+    if(drops) {
+        window.addEventListener('hashchange', function() {
+            if (window.location.hash == "#bacteria" || window.location.hash == "#collector" ) {
+                drops.classList.remove('gone')
+            } else {
+                drops.classList.add('gone')
+            }
+        })
+    }
+
 })()

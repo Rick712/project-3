@@ -11,14 +11,14 @@ const port = 3000
 
 app.get('/', function (req, res) {
     res.render('login')
-    io.on('connection', function (socket) {
-        console.log('A user connected')
-    })
+    // io.on('connection', function (socket) {
+    //     console.log('A user connected')
+    // })
 })
 
-io.on('username', function(username) {
-    console.log('Userasfdasf has joined')
-})
+// io.on('username', function(username) {
+//     console.log('Userasfdasf has joined')
+// })
 
 app.get('/start', function (req, res) {
     res.render('index')

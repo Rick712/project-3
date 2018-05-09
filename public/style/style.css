@@ -88,7 +88,7 @@ iframe {
     width: 4%;
     position: absolute;
     top: 100vh;
-    animation: dropNew 4s linear infinite;
+    animation: dropNew 2.45s linear infinite;
 }
 
 @keyframes dropNew {
@@ -100,18 +100,24 @@ iframe {
     }
 }
 
-.drops .drop1 {
-    left: 65vw;
-    animation-delay: 2.8s;
-}
-
-.drops .drop2 {
-    left: 40vw;
-    animation-delay: 1.5s;
+.drops .drop4 {
+    left: 80vw;
+    animation-delay: 0;
 }
 
 .drops .drop3 {
-    left: 80vw;
+    left: 40vw;
+    animation-delay: 1.22s;
+}
+
+.drops .drop1 {
+    left: 65vw;
+    animation-delay: 1.83s;
+}
+
+.drops .drop2 {
+    left: 75vw;
+    animation-delay: 0.61s;
 }
 
 #collector {

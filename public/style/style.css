@@ -19,7 +19,7 @@ body {
 .intro h1 {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .intro p {
@@ -41,13 +41,59 @@ body {
     border: solid black 2px;
     text-align: center;
     padding: 2rem 0;
-    margin-top: 3rem;
+    margin-top: 5rem;
     background-color: white;
     transition: box-shadow .3s ease;
 }
 
 .intro a:hover {
     box-shadow: 5px 5px 5px #444444;
+}
+
+.info .change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.info h3:first-of-type {
+    margin-top: 2rem;
+}
+
+.info .change p {
+    margin-bottom: 0;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.info .change:first-of-type p:after {
+    content: '%';
+}
+
+.info h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.info .change a {
+    border: solid black 2px;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 25px;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    text-align: center;
+    transition: 
+        background-color .3s ease,
+        color .3s ease;
+}
+
+.info .change a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .tank {
@@ -134,6 +180,10 @@ iframe {
     visibility: hidden;
 }
 
+.noDisplay {
+    display: none;
+}
+
 .drops img {
     width: 4%;
     position: absolute;
@@ -197,12 +247,14 @@ iframe {
 }
 
 .info a {
+    display: block;
+    margin-bottom: 1rem;
     color: black;
     text-decoration: none;
     font-weight: 700;
 }
 
-.info a:after {
+.info > a:after {
     content: '->';
     margin-left: .4rem;
     letter-spacing: .2rem;

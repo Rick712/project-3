@@ -11,14 +11,11 @@ const port = 3000
 
 app.get('/', function (req, res) {
     res.render('login')
-    // io.on('connection', function (socket) {
-    //     console.log('A user connected')
-    // })
 })
 
-// io.on('username', function(username) {
-//     console.log('Userasfdasf has joined')
-// })
+io.on('connection', function (socket) {
+    console.log('A user connected')
+})
 
 app.get('/start', function (req, res) {
     res.render('index')
@@ -34,6 +31,14 @@ app.get('/tank', function(req, res) {
 
 app.get('/verander/tank', function (req, res) {
     res.render('change/tank')
+})
+
+app.get('/verander/plant', function(req, res) {
+    res.render('change/plant')
+})
+
+app.get('verander/final', function(req,res) {
+    res.render('final')
 })
 
 app.get('/plant', function (req, res) {

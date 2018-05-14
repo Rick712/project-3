@@ -24,8 +24,16 @@ app.get('/start', function (req, res) {
     res.render('index')
 })
 
+app.get('/fout', function(req, res) {
+    res.render('pages/fout')
+})
+
 app.get('/tank', function(req, res) {
     res.render('pages/tank')
+})
+
+app.get('/verander/tank', function (req, res) {
+    res.render('change/tank')
 })
 
 app.get('/plant', function (req, res) {

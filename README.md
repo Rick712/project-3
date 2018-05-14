@@ -14,6 +14,8 @@ For project 3 I had to make a web app for De Ceuvel: 'De Ceuvel is a city playgr
 
 De Ceuvel has a new project: Aquapolics. They created a closed system consisting of multiple organisms. In this system, there are multiple sensors that track a ton of values. De Ceuvel wants a web app that uses the data from the sensors.
 
+This is just a prototype of something that could be a large web app. There are a lot of functionalities that I would want to implement (see the wishlist).
+
 ## My concept
 
 To me, the system of the Aquapolics is very interesting. I love biology, but there wasn't any data yet, since the system was relatively new, and not yet fully operational.
@@ -49,4 +51,6 @@ To install the web app, run `npm init`. Then, to start the server, run `node app
 
 - Real-time data instead of made-up data
 - More in-dept explanation of the process
-- 
+- Completing the circle from fish to plant with user input
+- Tell a better complete story
+- Overall better web app

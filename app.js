@@ -10,15 +10,11 @@ app.use(express.static('public'))
 const port = 3000
 
 app.get('/', function (req, res) {
-    res.render('login')
+    res.render('index')
 })
 
 io.on('connection', function (socket) {
     console.log('A user connected')
-})
-
-app.get('/start', function (req, res) {
-    res.render('index')
 })
 
 app.get('/fout', function(req, res) {
